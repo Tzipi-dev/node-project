@@ -1,3 +1,4 @@
+const Recipe = require('../models/Recipe');
 exports.AddRecipe = async(req,res) =>{
     
 }
