@@ -22,7 +22,7 @@ exports.getAllRecipes = async (req, res) => {
     const { name, category,instructions} = req.body;
   
     try {
-      const updatedRecipe = await User.findOneAndUpdate(
+      const updatedRecipe = await Recipe.findOneAndUpdate(
         { recipeId: recipeId }, 
         { name, category, instructions},
         { new: true }
