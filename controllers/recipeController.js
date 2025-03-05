@@ -60,7 +60,7 @@ exports.getAllRecipes = async (req, res) => {
     console.log(name)
   
     try {
-      const recipe = await User.findOne({ name });
+      const recipe = await Recipe.findOne({ name });
       if (!recipe) {
         return res.status(404).json({ message: 'recipe not found' });
       }
